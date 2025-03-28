@@ -1,0 +1,50 @@
+:root{
+    --colordark:#210F37;
+    --colorMove:#4F1C51;
+    --colorBrown:#A55B4B;
+    --colorKrimy:#DCA06D;
+    --colorWhite:#ffff;
+}
+body{
+    background-color: var(--colorMove);
+}
+
+
+
+.navbar{
+    background-color: var(--colordark);
+}
+.nav-link ,.navbar-brand{
+    color: var(--colorWhite);
+}
+.nav-link:hover{
+    color: var(--colorKrimy);
+}
+.items{
+    background-color: red;
+}
+.Slider{
+    background-color: blue;
+}
+.post{
+    background-color: var(--colordark);
+    color: var(--colorWhite);
+    border-radius: 10px;
+
+}
+ button{
+    background-color: var(--colorKrimy);
+    color: var();
+    border-radius:5px ;
+    transition: 0.5s;
+    color: var(--colordark);
+    
+}
+ .buttonCopy:hover{
+    background-color:green;
+    color: var(--colorWhite);
+    border-radius:5px ;
+    letter-spacing: 1px;
+    scale: 1.1;
+
+}
