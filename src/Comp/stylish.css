@@ -48,3 +48,111 @@ body{
     scale: 1.1;
 
 }
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--colorKrimy);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-to-top.show {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.scroll-to-top:hover {
+    background-color: var(--colorBrown);
+}
+
+.fade-in {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    /* يحدد المسافة من الأسفل */
+    right: 20px;
+    /* يحدد المسافة من اليمين */
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 1000;
+    /* يضمن ظهور الزر فوق باقي العناصر */
+}
+
+/* تأثير الظهور */
+.fade-in {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* تأثير الاختفاء */
+.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+}
+.post{
+    height: 700;
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* تأثير الظهور */
+.fade-in {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* تأثير الاختفاء */
+.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+}
+.bi-arrow-up-circle-fill{
+    
+    color: var(--colorMove);
+}

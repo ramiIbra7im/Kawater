@@ -6,7 +6,7 @@ function Nav() {
             <div className="container">
                 
                 <img src={logo} alt="Logo" width={100} height={50} /> {/* استخدام المتغير */}
-                <button className="navbar-toggler bg-white border-0 box-shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                {/* <button className="navbar-toggler bg-white border-0 box-shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -18,7 +18,7 @@ function Nav() {
                             <a className="nav-link" href="/#">Link</a>
                         </li>
                     </ul>
-                </div>
+                </div> */}
             </div>
         </nav>
     );
