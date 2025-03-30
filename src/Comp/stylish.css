@@ -156,3 +156,10 @@ body{
     
     color: var(--colorMove);
 }
+.form-select{
+    background-color: var(--colorBrown);
+}
+.form-select .op{
+    background-color: var(--colorMove);
+    color: var(--colorWhite);
+}
