@@ -1,9 +1,9 @@
 :root{
-    --colordark:#210F37;
-    --colorMove:#4F1C51;
-    --colorBrown:#A55B4B;
-    --colorKrimy:#DCA06D;
-    --colorWhite:#ffff;
+    --colordark:#D9D7D7;
+    --colorMove:#1D2F40;
+    --colorBrown:#D97E7E;
+    --colorWhite:#2C4459;
+    --grdiant:linear-gradient(to bottom, rgb(253, 216, 216), #D9D7D7);
 }
 body{
     background-color: var(--colorMove);
@@ -12,28 +12,20 @@ body{
 
 
 .navbar{
-    background-color: var(--colordark);
+    background-color: var(--colorWhite);
 }
 .nav-link ,.navbar-brand{
     color: var(--colorWhite);
 }
-.nav-link:hover{
-    color: var(--colorKrimy);
-}
-.items{
-    background-color: red;
-}
-.Slider{
-    background-color: blue;
-}
+
 .post{
-    background-color: var(--colordark);
+    background-image: var(--grdiant);
     color: var(--colorWhite);
     border-radius: 10px;
 
 }
  button{
-    background-color: var(--colorKrimy);
+    background-color: var(--colorBrown);
     color: var();
     border-radius:5px ;
     transition: 0.5s;
@@ -42,7 +34,6 @@ body{
 }
  .buttonCopy:hover{
     background-color:green;
-    color: var(--colorWhite);
     border-radius:5px ;
     letter-spacing: 1px;
     scale: 1.1;
@@ -163,3 +154,4 @@ body{
     background-color: var(--colorMove);
     color: var(--colorWhite);
 }
+.copy_done,.date{color: var(--colorWhite);}
