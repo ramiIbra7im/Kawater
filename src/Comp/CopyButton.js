@@ -14,8 +14,7 @@ function CopyButton({ text }) {
 
     return (
         <div>
-            {copied && <span className="text-white ms-2"> ! تم النسخ     git add .
-</span>}
+            {copied && <span className="text-white ms-2"> ! تم النسخ </span>}
         <button type="button" className="buttonCopy  border-0 p-2 fw-bold " onClick={handleCopy}>نسخ</button>
 
         </div>
