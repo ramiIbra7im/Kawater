@@ -50,7 +50,7 @@ function Posts() {
 
     return (
         <div className="container">
-            <div className=" col-lg-8 d-flex justify-content-between align-items-center gap-2">
+            <div className=" col-lg-8 container d-flex justify-content-between align-items-center gap-2">
                   <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
                   <Filter posts={posts} selectedTitle={selectedTitle} setSelectedTitle={setSelectedTitle} />
             </div>
@@ -61,7 +61,7 @@ function Posts() {
             ) : (
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }}>
                     {filteredPosts.map((post, index) => (
-                        <motion.div key={index} className="post p-3 col-lg-8 m-3" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: index * 0.1 }}>
+                        <motion.div key={index} className="post p-3 col-lg-12 m-3" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: index * 0.1 }}>
                             <div className="title row p-1 d-flex align-items-center">
                                 <div className="col text-end fw-bold fs-3">{post.title}</div>
                                 <div className="col-auto">
